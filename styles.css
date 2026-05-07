@@ -137,6 +137,8 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
+  width: 100%;
+  min-width: 0;
   justify-items: center;
 }
 
@@ -344,7 +346,8 @@ h1 {
 
   .nav-links {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     gap: 10px;
     overflow-x: auto;
     overscroll-behavior-x: contain;
@@ -370,7 +373,8 @@ h1 {
   }
 
   h1 {
-    white-space: normal;
+    white-space: nowrap;
+    max-width: 100%;
   }
 
   .hero::after {
@@ -424,9 +428,9 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(42px, 16vw, 68px);
-    line-height: 0.9;
-    white-space: normal;
+    font-size: clamp(31px, 10.7vw, 48px);
+    line-height: 0.92;
+    white-space: nowrap;
   }
 
   .hero {
