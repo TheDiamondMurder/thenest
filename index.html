@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jakublabs.xyz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#" aria-label="jakublabs.xyz home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>jakublabs.xyz</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="https://rollercoasters.jakublabs.xyz">Rollercoasters</a>
+        <a href="https://jakubondslr.myportfolio.com/">Photography</a>
+        <a href="https://links.jakublabs.xyz/">Links</a>
+        <a href="tools/index.html">Tools</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-inner">
+          <h1 id="page-title">jakublabs.xyz</h1>
+          <p class="lede">get rich or die tryin</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="https://links.jakublabs.xyz/">View Links</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="birthday-counter" aria-labelledby="birthday-counter-title">
+        <p class="counter-label" id="birthday-counter-title">birthday counter</p>
+        <p class="counter-age" id="birthday-age">turning --</p>
+        <p class="birthday-message" id="birthday-message" hidden>its my birthday</p>
+        <div class="timer" id="birthday-timer" aria-live="polite">
+          <div class="timer-unit">
+            <span class="timer-value" id="timer-days">--</span>
+            <span class="timer-label">days</span>
+          </div>
+          <div class="timer-unit">
+            <span class="timer-value" id="timer-hours">--</span>
+            <span class="timer-label">hours</span>
+          </div>
+          <div class="timer-unit">
+            <span class="timer-value" id="timer-minutes">--</span>
+            <span class="timer-label">mins</span>
+          </div>
+          <div class="timer-unit">
+            <span class="timer-value" id="timer-seconds">--</span>
+            <span class="timer-label">secs</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
