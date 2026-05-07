@@ -16,11 +16,14 @@
 }
 
 html {
+  width: 100%;
   min-height: 100%;
+  overflow-x: hidden;
   background: var(--bg);
 }
 
 body {
+  width: 100%;
   min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
@@ -62,6 +65,8 @@ a {
   justify-content: space-between;
   gap: 28px;
   padding: 0 clamp(20px, 6vw, 92px);
+  width: 100%;
+  max-width: 100%;
   border-bottom: 1px solid var(--line);
   background: rgba(3, 3, 3, 0.76);
   backdrop-filter: blur(18px);
@@ -88,6 +93,8 @@ a {
 }
 
 .nav-links {
+  min-width: 0;
+  max-width: 100%;
   flex-wrap: nowrap;
   justify-content: flex-end;
   gap: clamp(18px, 3vw, 36px);
@@ -339,7 +346,15 @@ h1 {
     width: 100%;
     justify-content: center;
     gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding-bottom: 2px;
     font-size: 13px;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-links a {
@@ -352,6 +367,10 @@ h1 {
   .hero {
     min-height: 540px;
     padding: 72px 18px 76px;
+  }
+
+  h1 {
+    white-space: normal;
   }
 
   .hero::after {
@@ -401,14 +420,7 @@ h1 {
 
   .nav-links {
     justify-content: flex-start;
-    overflow-x: auto;
     flex-wrap: nowrap;
-    padding-bottom: 2px;
-    scrollbar-width: none;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
   }
 
   h1 {
