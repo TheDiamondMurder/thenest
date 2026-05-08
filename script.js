@@ -5,6 +5,7 @@ const timerDays = document.querySelector("#timer-days");
 const timerHours = document.querySelector("#timer-hours");
 const timerMinutes = document.querySelector("#timer-minutes");
 const timerSeconds = document.querySelector("#timer-seconds");
+const survivalPercentage = document.querySelector("#survival-percentage");
 const birthYear = 2007;
 const birthdayMonth = 10;
 const birthdayDay = 28;
@@ -62,5 +63,23 @@ function updateBirthdayCounter() {
   timerSeconds.textContent = formatTimerValue(seconds);
 }
 
+function formatSurvivalPercentage(value) {
+  const numericValue = Number(value);
+  if (!Number.isFinite(numericValue)) return "--%";
+  return `${numericValue.toLocaleString(undefined, { maximumFractionDigits: 2 })}%`;
+}
+
+function updateSurvivalChance() {
+  fetch(`survival.json?live=${Date.now()}`)
+    .then((response) => response.json())
+    .then((data) => {
+      survivalPercentage.textContent = formatSurvivalPercentage(data.percentage);
+    })
+    .catch(() => {
+      survivalPercentage.textContent = "--%";
+    });
+}
+
 updateBirthdayCounter();
+updateSurvivalChance();
 setInterval(updateBirthdayCounter, 1000);
