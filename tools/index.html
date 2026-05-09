@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tools | jakublabs.xyz</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css?v=5" />
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
@@ -26,6 +26,12 @@
         <p class="tools-kicker">tools</p>
         <h1 id="page-title">tools</h1>
         <p class="lede">absolute useless garbage</p>
+        <button class="privacy-notice" type="button" aria-expanded="false" aria-controls="privacy-details">
+          <span>Anything you upload to the website does not get stored on servers and is processed locally</span>
+        </button>
+        <div class="privacy-details" id="privacy-details" hidden>
+          This website is hosted as a static website, meaning it can only read data from the server, and cannot upload or write to the server. Uploading WhatsApp group chat exports is 100% safe, and they are only stored in your local data for a few seconds as the website does its processing before it is cleared.
+        </div>
       </section>
 
       <section class="tools-grid" aria-label="Available tools">
@@ -79,7 +85,52 @@
           <h2>cards</h2>
           <p>open packs, collect trading cards, render them, and sell duplicates</p>
         </a>
+        <a class="tool-card" href="https://chatlore.jakublabs.xyz">
+          <span class="tool-number">11</span>
+          <h2>chat lore timeline</h2>
+          <p>turn a WhatsApp export into a horizontal timeline of the chat's major moments</p>
+        </a>
+        <a class="tool-card" href="https://quoteduel.jakublabs.xyz">
+          <span class="tool-number">12</span>
+          <h2>quote duel</h2>
+          <p>pull 32 WhatsApp quotes into a dramatic voting bracket until one quote survives</p>
+        </a>
+        <a class="tool-card" href="https://amicooked.jakublabs.xyz">
+          <span class="tool-number">13</span>
+          <h2>am i cooked?</h2>
+          <p>analyse a private WhatsApp chat and calculate how badly the evidence is looking</p>
+        </a>
+        <a class="tool-card" href="https://wheel.jakublabs.xyz">
+          <span class="tool-number">14</span>
+          <h2>wheel of fate</h2>
+          <p>spin a dramatic decision wheel with fair, suspicious, rigged, and nuclear modes</p>
+        </a>
+        <a class="tool-card" href="https://countdown.jakublabs.xyz">
+          <span class="tool-number">15</span>
+          <h2>countdown graphics</h2>
+          <p>make dramatic shareable countdown pages and render countdown graphics</p>
+        </a>
+        <a class="tool-card" href="https://tierlist.jakublabs.xyz">
+          <span class="tool-number">16</span>
+          <h2>tier list maker</h2>
+          <p>drag items into tiers, export the image, and share reusable templates</p>
+        </a>
+        <a class="tool-card" href="https://realorfake.jakublabs.xyz">
+          <span class="tool-number">17</span>
+          <h2>real or fake?</h2>
+          <p>guess whether a WhatsApp quote is real or forged from the chat's own vocabulary</p>
+        </a>
       </section>
     </main>
+    <script>
+      const privacyNotice = document.querySelector(".privacy-notice");
+      const privacyDetails = document.querySelector("#privacy-details");
+
+      privacyNotice.addEventListener("click", () => {
+        const isOpen = privacyNotice.getAttribute("aria-expanded") === "true";
+        privacyNotice.setAttribute("aria-expanded", String(!isOpen));
+        privacyDetails.hidden = isOpen;
+      });
+    </script>
   </body>
 </html>
