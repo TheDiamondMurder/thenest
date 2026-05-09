@@ -361,6 +361,58 @@ h1 {
   gap: 14px;
 }
 
+.privacy-notice {
+  display: grid;
+  width: min(780px, 100%);
+  min-height: 58px;
+  margin: 26px auto 0;
+  place-items: center;
+  border: 1px solid rgba(233, 255, 112, 0.42);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 12% 50%, rgba(233, 255, 112, 0.16), transparent 28%),
+    rgba(10, 10, 11, 0.82);
+  box-shadow:
+    0 0 34px rgba(233, 255, 112, 0.12),
+    inset 0 0 24px rgba(233, 255, 112, 0.04);
+  color: var(--text);
+  cursor: pointer;
+  padding: 16px 20px;
+  text-align: center;
+}
+
+.privacy-notice span {
+  max-width: 68ch;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.privacy-notice:hover,
+.privacy-notice[aria-expanded="true"] {
+  border-color: rgba(233, 255, 112, 0.72);
+  box-shadow:
+    0 0 44px rgba(233, 255, 112, 0.2),
+    inset 0 0 28px rgba(233, 255, 112, 0.06);
+}
+
+.privacy-details {
+  width: min(780px, 100%);
+  margin: 12px auto 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.045), transparent 70%),
+    rgba(10, 10, 11, 0.88);
+  color: var(--muted);
+  padding: 18px 20px;
+  font-size: 15px;
+  font-weight: 620;
+  line-height: 1.5;
+  text-align: left;
+}
+
 .tool-card {
   display: grid;
   min-height: 220px;
