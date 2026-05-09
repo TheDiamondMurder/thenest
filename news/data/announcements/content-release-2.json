@@ -1,0 +1,22 @@
+{
+  "slug": "content-release-2",
+  "title": "Content Release 2",
+  "datetime": "2026-05-08T04:09:00.000Z",
+  "content": [
+    {
+      "type": "heading",
+      "text": "What's new?"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Quote Duel",
+        "Am I Cooked",
+        "Wheel of Fate",
+        "Countdowns",
+        "Tierlist Builder",
+        "Real or Fake"
+      ]
+    }
+  ]
+}
