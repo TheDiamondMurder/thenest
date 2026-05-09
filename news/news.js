@@ -25,7 +25,7 @@ function renderAnnouncements(announcements) {
       .map((announcement, index) => {
         const card = document.createElement("a");
         card.className = "news-card";
-        card.href = `announcement.html?slug=${encodeURIComponent(announcement.slug)}`;
+        card.href = `announcements/${encodeURIComponent(announcement.slug)}/`;
         card.innerHTML = `
           <span class="tool-number">${String(index + 1).padStart(2, "0")}</span>
           <time>${formatDate(announcement.datetime)}</time>
