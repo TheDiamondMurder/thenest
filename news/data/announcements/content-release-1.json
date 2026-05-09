@@ -1,0 +1,19 @@
+{
+  "slug": "content-release-1",
+  "title": "Content Release 1",
+  "datetime": "2026-05-07T02:48:00.000Z",
+  "content": [
+    {
+      "type": "heading",
+      "text": "What's new?"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Graphic Generator",
+        "Cards",
+        "Chat Lore"
+      ]
+    }
+  ]
+}
