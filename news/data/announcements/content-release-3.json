@@ -1,0 +1,18 @@
+{
+  "slug": "content-release-3",
+  "title": "Content Release 3",
+  "datetime": "2026-05-11T01:28:00.000Z",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Whats new?"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "The Jakub Purity Test",
+        "My Notts County Diary"
+      ]
+    }
+  ]
+}
