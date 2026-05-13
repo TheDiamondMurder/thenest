@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tools | jakublabs.xyz</title>
-    <link rel="stylesheet" href="../styles.css?v=6" />
+    <link rel="stylesheet" href="../styles.css?v=7" />
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
@@ -131,6 +131,31 @@
           <h2>notts county</h2>
           <p>my notts county diary (i am not a pundit)</p>
         </a>
+        <a class="tool-card" href="https://scpcreator.jakublabs.xyz">
+          <span class="tool-number">20</span>
+          <h2>scp creator</h2>
+          <p>create a custom SCP entry and render it as a classified document graphic</p>
+        </a>
+        <a class="tool-card" href="https://guessthedate.jakublabs.xyz">
+          <span class="tool-number">21</span>
+          <h2>guess the date</h2>
+          <p>guess when a WhatsApp conversation happened using a timeline slider</p>
+        </a>
+        <a class="tool-card" href="https://coasterwordle.jakublabs.xyz">
+          <span class="tool-number">22</span>
+          <h2>coaster wordle</h2>
+          <p>guess the UK rollercoaster from park, speed, inversions, height, and year</p>
+        </a>
+        <a class="tool-card" href="https://tablecreator.jakublabs.xyz">
+          <span class="tool-number">23</span>
+          <h2>table creator</h2>
+          <p>create a custom league-table graphic with your own columns and values</p>
+        </a>
+        <a class="tool-card" href="https://guesstheresponse.jakublabs.xyz">
+          <span class="tool-number">24</span>
+          <h2>guess the response</h2>
+          <p>read three WhatsApp messages and guess which response actually came next</p>
+        </a>
       </section>
     </main>
     <script>
@@ -141,7 +166,9 @@
         const isOpen = privacyNotice.getAttribute("aria-expanded") === "true";
         privacyNotice.setAttribute("aria-expanded", String(!isOpen));
         privacyDetails.hidden = isOpen;
+        window.initScrollReveals?.();
       });
     </script>
+    <script src="../site.js?v=1"></script>
   </body>
 </html>
