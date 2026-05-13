@@ -1,0 +1,21 @@
+{
+  "slug": "content-release-4",
+  "title": "Content Release 4",
+  "datetime": "2026-05-13T00:58:00.000Z",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Whats new"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Added SCP Creator",
+        "Added Guess the Date",
+        "Added Rollercoaster Wordle",
+        "Added League Table Creator",
+        "Added Guess the Response"
+      ]
+    }
+  ]
+}
