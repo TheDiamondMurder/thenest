@@ -35,6 +35,7 @@ function renderAnnouncements(announcements) {
         return card;
       }),
   );
+  window.initScrollReveals?.();
 }
 
 async function loadAnnouncements() {
