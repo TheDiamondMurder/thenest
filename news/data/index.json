@@ -16,5 +16,11 @@
 		"title": "Content Release 3",
 		"datetime": "2026-05-11T01:28:00.000Z",
 		"summary": "Read more about the 3rd Content Release"
+	},
+	{
+		"slug": "content-release-4",
+		"title": "Content Release 4",
+		"datetime": "2026-05-13T00:58:00.000Z",
+		"summary": "Read more about the 4th Content Release"
 	}
 ]
