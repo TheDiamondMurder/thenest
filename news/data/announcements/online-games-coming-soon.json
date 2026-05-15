@@ -1,0 +1,31 @@
+{
+  "slug": "online-games-coming-soon",
+  "title": "Online Games Coming SOon",
+  "datetime": "2026-05-15T02:06:00.000Z",
+  "content": [
+    {
+      "type": "heading",
+      "text": "Whats coming?"
+    },
+    {
+      "type": "paragraph",
+      "text": "I am working on new online games that you can play with people over the internet. I will be testing this out by releasing 2 online games for Content Release 6 later in June. After that I will work on making online versions of some popular games we have now. However, the offline local games will still remain on the website."
+    },
+    {
+      "type": "heading",
+      "text": "Quote Book Builder"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this game, you and your friends go head to head on who can build the best quote book. A quote will come on the screen and the first person to click the \"Guess\" button, will get to guess who said that quote in the imported group chat. If they guess it right, they add it to their quote book, if they don't, everyone else gets an attempt. Once each player has 5 quotes in their quote book, it will open up to a vote where people vote for who's quote book is the best.\n\n(minimum of 3 players required)"
+    },
+    {
+      "type": "heading",
+      "text": "Imposter"
+    },
+    {
+      "type": "paragraph",
+      "text": "One person is marked as an imposter, whereas everyone else gets a word. Each players will take a turn to write a word in the chat that relates to the word that was given, however, the imposter does not know what the word is, and they will have to say something that relates to what they think the word is, by guessing from clues given by the other players. The imposters goal is to not get discovered by the players and voted out."
+    }
+  ]
+}
