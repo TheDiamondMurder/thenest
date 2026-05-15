@@ -28,5 +28,11 @@
 		"title": "Content Release 5",
 		"datetime": "2026-05-14T02:30:00.000Z",
 		"summary": "Read more about the 5th Content Release"
+	},
+	{
+		"slug": "online-games-coming-soon",
+		"title": "Online Games Coming SOon",
+		"datetime": "2026-05-15T02:06:00.000Z",
+		"summary": "Read about new Online Games, coming soon."
 	}
 ]
